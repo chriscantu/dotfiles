@@ -24,3 +24,16 @@ ln -sf ~/repos/dotfiles/starship/starship.toml ~/.config/starship.toml
 
 Dependencies: [fish](https://fishshell.com), [starship](https://starship.rs),
 [zoxide](https://github.com/ajeetdsouza/zoxide), [Homebrew](https://brew.sh).
+
+## Adding a dotfile
+
+Files here are tracked by moving them into the repo and symlinking them back,
+so edits in `~/.config` and in the repo are the same file:
+
+```fish
+mv ~/.config/foo/bar.conf ~/repos/dotfiles/foo/bar.conf
+ln -s ~/repos/dotfiles/foo/bar.conf ~/.config/foo/bar.conf
+```
+
+Then add a row to the table above and commit.
+

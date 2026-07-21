@@ -1,0 +1,6 @@
+# fish machine-local state — regenerated per machine, never tracked.
+# Basename match also covers fish/fish_variables if the fish dir is ever tracked wholesale.
+fish_variables
+
+# macOS Finder metadata
+.DS_Store
