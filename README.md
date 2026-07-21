@@ -58,3 +58,12 @@ ln -s ~/repos/dotfiles/foo/bar.conf ~/.config/foo/bar.conf
 
 Then add a row to the table above and commit.
 
+For a whole config **directory** (like `fish/completions` or `fish/functions`),
+symlink the directory once instead — after that, any file you drop into it is
+already inside the repo and auto-tracks, no per-file symlink needed:
+
+```fish
+mv ~/.config/foo ~/repos/dotfiles/foo
+ln -s ~/repos/dotfiles/foo ~/.config/foo
+```
+
